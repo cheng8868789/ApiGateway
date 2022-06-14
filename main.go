@@ -9,20 +9,27 @@ import (
 
 func main() {
 
-	Init()
+	err := Init()
+	if err != nil {
+		return
+	}
 
-	http.HandleFunc("/apiTest",apiHandler.ServeHandler)
+	http.HandleFunc("/apiTest", apiHandler.ServeHandler)
 
 	//启动http server
-	http.ListenAndServe("0.0.0.0:7080",nil)
+	addr := apiConfig.GetAddr()
+	http.ListenAndServe(addr, nil)
 
 }
 
+func Init() error {
 
-func Init()  {
-
-	apiConfig.Init()
+	err := apiConfig.Init()
+	if err != nil {
+		fmt.Println("apiConfig.Init() failure")
+		return err
+	}
 
 	fmt.Println("ApiGateway init success......")
-
+	return nil
 }

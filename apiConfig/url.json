@@ -1,0 +1,14 @@
+{
+  "urls": [
+    {
+      "url" : "/url1",
+      "serviceName" : "service1"
+    },{
+      "url" : "/url1",
+      "serviceName" : "service1"
+    },{
+      "url" : "/url1",
+      "serviceName" : "service1"
+    }
+  ]
+}
