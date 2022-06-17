@@ -4,11 +4,11 @@
       "url" : "/url1",
       "serviceName" : "service1"
     },{
-      "url" : "/url1",
-      "serviceName" : "service1"
+      "url" : "/url2",
+      "serviceName" : "service2"
     },{
-      "url" : "/url1",
-      "serviceName" : "service1"
+      "url" : "/url3",
+      "serviceName" : "service3"
     }
   ]
 }

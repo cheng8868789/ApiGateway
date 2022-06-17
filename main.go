@@ -14,7 +14,7 @@ func main() {
 		return
 	}
 
-	http.HandleFunc("/apiTest", apiHandler.ServeHandler)
+	http.HandleFunc("/apiTest/", apiHandler.ServeHandler)
 
 	//启动http server
 	addr := apiConfig.GetAddr()
